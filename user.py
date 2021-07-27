@@ -111,6 +111,14 @@ for i in range(200):
     }
     user_data.append(temp)
 
+user_data[0]['work_email'] = 'dev@cloud.vn'
+user_data[0]['permission_profile_id'] = 2
+user_data[0]['gender'] = 0
+user_data[0]['type'] = 1
+
+user_data[1]['work_email'] = 'test@cloud.vn'
+user_data[1]['type'] = 1
+user_data[1]['gender'] = 0
 
 with open('output/user_data.json', 'w') as f:
     json.dump(user_data, f, ensure_ascii=False, indent=4)
